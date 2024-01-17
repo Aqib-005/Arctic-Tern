@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class LevelBoundry : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static float leftSide = -2.5f;
+    public static float rightSide = 2.5f;
+    public float internalLeft;
+    public float internalRight;
 
-    // Update is called once per frame
     void Update()
     {
-        
+     internalLeft = leftSide;
+     internalRight = rightSide;   
     }
 }
