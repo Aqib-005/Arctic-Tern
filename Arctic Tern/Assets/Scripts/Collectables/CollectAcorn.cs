@@ -8,6 +8,7 @@ public class CollectAcorn : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         acornFX.Play();
+        CollectableControl.acornCount += 1;
         this.gameObject.SetActive(false);
     }
 }
