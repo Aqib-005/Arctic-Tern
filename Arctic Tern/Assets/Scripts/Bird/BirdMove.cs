@@ -6,6 +6,7 @@ public class BirdMove : MonoBehaviour
 {
     public float moveSpeed = 3;
     public float leftRightSpeed = 9;
+    static public bool canMove = false;
 
     private int currentCompartment = 1; // 0 for left, 1 for center, 2 for right
 
@@ -14,6 +15,8 @@ public class BirdMove : MonoBehaviour
     {
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
 
+        if(canMove == true)
+        {
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (currentCompartment > 0)
@@ -32,6 +35,7 @@ public class BirdMove : MonoBehaviour
                 currentCompartment++;
                 MoveToCompartment();
             }
+        }
         }
     }
 
