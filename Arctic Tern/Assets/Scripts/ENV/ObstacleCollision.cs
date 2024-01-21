@@ -11,5 +11,6 @@ public class ObstacleCollision : MonoBehaviour
         this.gameObject.GetComponent<MeshCollider>().enabled = false;    
         theBird.GetComponent<BirdMove>().enabled = false;
         charModel.GetComponent<Animator>().Play("Falling Back Death");
+       // charModel.GetComponent<Animator>().SetTrigger("FallingBackDeathTrigger");
     }
 }
