@@ -18,7 +18,7 @@ public class LevelStarter : MonoBehaviour
 
     IEnumerator CountSequence()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.4f);
         countDown3.SetActive(true);
         readyFX.Play();
         yield return new WaitForSeconds(1);
