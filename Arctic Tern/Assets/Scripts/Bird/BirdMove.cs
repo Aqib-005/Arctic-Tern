@@ -6,7 +6,12 @@ public class BirdMove : MonoBehaviour
 {
     public float moveSpeed = 3;
     public float leftRightSpeed = 9;
-    static public bool canMove = false;
+    public static bool canMove = false;
+    public bool isJumping = false;
+    public bool commingDown = false;
+    public GameObject playerObject;
+
+
 
     private int currentCompartment = 1; // 0 for left, 1 for center, 2 for right
 
@@ -36,7 +41,39 @@ public class BirdMove : MonoBehaviour
                 MoveToCompartment();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            if(isJumping == false)
+            {
+                isJumping = true;
+                playerObject.GetComponent<Animator>().Play("Jumping Up");
+                StartCoroutine(JumpSequnce());
+            }
         }
+        }
+
+        if(isJumping == true)
+        {
+            if(commingDown == false)
+            {
+                transform.Translate(Vector3.up * Time.deltaTime * 3, Space.World);
+            }
+            if(commingDown == true)
+            {
+                transform.Translate(Vector3.up * Time.deltaTime * -3, Space.World);
+            }
+        }
+    }
+
+    IEnumerator JumpSequnce()
+    {
+        yield return new WaitForSeconds(0.45f);
+        commingDown = true;
+        yield return new WaitForSeconds(0.45f);
+        isJumping = false;
+        commingDown = false;
+        playerObject.GetComponent<Animator>().Play("Flying");
     }
 
     void MoveToCompartment()

@@ -10939,6 +10939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1240164027}
+  - component: {fileID: 1240164028}
   m_Layer: 0
   m_Name: Section
   m_TagString: Untagged
@@ -10975,6 +10976,19 @@ Transform:
   - {fileID: 1844192881}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1240164028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240164026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c68fb6b6ef1f8d45a36a4f53557b228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentName: 
 --- !u!1 &1240438739
 GameObject:
   m_ObjectHideFlags: 0
@@ -13157,6 +13171,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   leftRightSpeed: 9
+  isJumping: 0
+  commingDown: 0
+  playerObject: {fileID: 1426204971}
 --- !u!65 &1406606196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19168,6 +19185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112971285}
+  - component: {fileID: 2112971286}
   m_Layer: 0
   m_Name: Section
   m_TagString: Untagged
@@ -19206,6 +19224,19 @@ Transform:
   - {fileID: 868946878}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2112971286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112971284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c68fb6b6ef1f8d45a36a4f53557b228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentName: 
 --- !u!4 &2118740686 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1357873040918178147, guid: 87b1a4ec87dd8eb4fb00818956f8c7bf,
@@ -19569,6 +19600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2144011411}
+  - component: {fileID: 2144011412}
   m_Layer: 0
   m_Name: 'Section '
   m_TagString: Untagged
@@ -19607,6 +19639,19 @@ Transform:
   - {fileID: 483037570}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2144011412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144011410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c68fb6b6ef1f8d45a36a4f53557b228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentName: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
