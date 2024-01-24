@@ -11,7 +11,7 @@ public class BirdMove : MonoBehaviour
     public GameObject playerObject;
 
     private int currentCompartment = 1; // 0 for left, 1 for center, 2 for right
-    private int currentHeight = 0; // 0 for default, 1 for one position up, 2 for two positions up
+    private float currentHeight = 0.155f; // 0 for default, 1 for one position up, 2 for two positions up
 
     // Update is called once per frame
     void Update()
@@ -85,15 +85,16 @@ public class BirdMove : MonoBehaviour
         playerObject.GetComponent<Animator>().Play("Flying");
     }
 
-    void MoveVertical(int direction)
-    {
-        float targetY = currentHeight * 2f; // Snap to the center of each square
-        transform.position = new Vector3(transform.position.x, targetY, transform.position.z);
-    }
+void MoveVertical(int direction)
+{
+    float targetY = Mathf.Clamp(currentHeight * 2.155f, 0.155f, 4.155f); // Snap to the center of each square and clamp within the grid
+    transform.position = new Vector3(transform.position.x, targetY, transform.position.z);
+}
 
-    void MoveToCompartment()
-    {
-        float targetX = currentCompartment * 2f - 2f;
-        transform.position = new Vector3(targetX, transform.position.y, transform.position.z);
-    }
+void MoveToCompartment()
+{
+    float targetX = Mathf.Clamp(currentCompartment * 2f - 2f, -2.5f, 2.5f); // Ensure the bird stays within the grid
+    transform.position = new Vector3(targetX, transform.position.y, transform.position.z);
+}
+  
 }
