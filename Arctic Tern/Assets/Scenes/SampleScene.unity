@@ -2987,6 +2987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: a008918f2d4272845bdbbae611dabfbc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3546,6 +3551,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mountain 3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: 6baa815c0a819ba4aa43eeea7a177a2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7297835685719995837, guid: 6baa815c0a819ba4aa43eeea7a177a2a,
         type: 3}
@@ -6602,6 +6612,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mountain 3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: 6baa815c0a819ba4aa43eeea7a177a2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20121,6 +20136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: a008918f2d4272845bdbbae611dabfbc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20301,6 +20321,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mountain 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: 6baa815c0a819ba4aa43eeea7a177a2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24427,6 +24452,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain 2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: a008918f2d4272845bdbbae611dabfbc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25431,6 +25461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mountain 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: a008918f2d4272845bdbbae611dabfbc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26886,6 +26921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mountain 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330053009667153852, guid: 87b1a4ec87dd8eb4fb00818956f8c7bf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
